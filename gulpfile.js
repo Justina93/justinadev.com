@@ -67,6 +67,13 @@ const {
         open: true,
       })
     );
+
+  const build = series(
+    parallel(scssTask, jsTask),
+    htmlTask,
+    cacheBustTask,
+    resTask,
+  );
   
   // * default
   exports.default = series(
@@ -77,4 +84,6 @@ const {
     serveTask,
     watchTask
   );
+
+  exports.build = build;
   
