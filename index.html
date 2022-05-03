@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <title>ARSIC</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+
+            <nav>
+                <div class="nav-brand">
+                    <a href="index.html"><img src="img/logo.png" class="logo" alt="logo"></a>
+                </div>
+
+                <div class="burger-menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
+                <ul class="nav-list">
+
+                    <li class="nav-item">
+                        <a href="#landing-page">
+                            <img src="img/avatar.jpg" alt="Justina" class="profile-pic nav-link" />
+                            <span class="caption nav-link">JUSTINA ARSIĆ</span></a>
+                    </li>
+
+                    <!-- start theme -->
+                    <li class="nav-item">
+                        <div class="switch">
+                            <div class="moon"></div>
+                            <div class="sun"></div>
+                        </div>
+                    </li>
+                    <!-- end theme -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="pdf/Justina's Resume.pdf">Download CV</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+
+                    <div class="git">
+                        <a href="https://github.com/Justina93/Justina93" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+       <!-- SECTION LANDING PAGE -->
+    <section id="landing-page" class="landing-page">
+        <div class="container">
+          
+            <div class="main-message">
+                <h2>Justina Arsić</h2>
+                <h3>Front-End Web Junior</h3>
+                <p>. Html . CSS . SASS . JS</p>
+
+                <div class="intro-btn">
+                    <div class="cta">
+                        <a href="#contact" class="btn">Get in touch</a>
+                    </div>
+                    <div class="cta">
+                        <a href="#projects" class="btn">My projects</a>
+                    </div>
+                </div>
+
+                <div class="pink-floyd">
+                    <p id="pink-floyd">Have you listened to Pink Floyd before?</p>
+                </div>
+
+
+                <!-- PLAYER -->
+                <div class="holder">
+
+                    <div class="audio blue-audio-player">
+
+                        <div class="loading">
+                            <div class="spinner"></div>
+                        </div>
+
+                        <div class="play-pause-btn">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
+                                <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon"
+                                    id="playPause" />
+                            </svg>
+
+                        </div>
+
+                        <div class="controls">
+
+                            <span class="current-time">0:00</span>
+                            <div class="slider" data-direction="horizontal">
+                                <div class="progress">
+                                    <div class="pin" id="progress-pin" data-method="rewind"></div>
+                                </div>
+                            </div>
+                            <span class="total-time">0:00</span>
+
+                        </div>
+
+                        <div class="volume">
+
+                            <div class="volume-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#566574" fill-rule="evenodd"
+                                        d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z"
+                                        id="speaker" />
+                                </svg>
+                            </div>
+
+                            <div class="volume-controls hidden">
+                                <div class="slider" data-direction="vertical">
+                                    <div class="progress">
+                                        <div class="pin" id="volume-pin" data-method="changeVolume"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <audio crossorigin>
+                            <source src="audio/Pink Floyd-Keep Talking.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+                </div>
+
+                <div>
+                    <a href="#about" class="scroll-down">
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION ABOUT -->
+    <section id="about" class="about">
+
+        <div class="container">
+
+            <div class="about-img">
+                <img src="img/about.jpg" alt="Justina">
+            </div>
+
+            <div class="about-text-box">
+                <blockquote>
+                For millions of years, mankind lived just like the animals. Then something happened which unleashed the power of our imagination.
+                    <span>Stephen Hawking</span>
+                </blockquote>
+            </div>
+
+        </div>
+        <hr/>
+
+    </section>
+
+      <!-- SECTION EXPERIENCE -->
+      <section id="experience" class="experience">
+        <div class="title-heading">
+            <h2>Experience</h2>
+            <!-- <p>All we have to decide is what to do with the time that is given us</p> -->
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-img">
+                <img src="img/astronomy.jpg" />
+            </div>
+            <div class="experience-description">
+                <h2>College ( 2013 - 2017 )</h2>
+                <p>I enrolled in Astrophysics hoping that Faculty would fulfil my expectations but unfortunately it didn't meet them up...Generally speaking, I'm still interested in Astrophysics as a phenomenon but I don't see it as something I would completely commit myself to, for life.</p>
+            </div>
+        </div>
+        <br>
+
+        <div class="experience-item">
+            
+            <div class="experience-description">
+                <h2>Job ( 2018 - 2021 )</h2>
+                <p>After University I worked in a pet shop for a while. I loved that job but I still didn't feel fulfilled. In the meantime I started the Vivify Academy but I couldn't manage both studying and working full-time.</p>
+            </div>
+            <div class="experience-img">
+                <img src="img/petshop.jpg" />
+            </div>
+        </div>
+        <br>
+
+        <div class="experience-item">
+            <div class="experience-img">
+                <img src="img/coding.jpg" />
+            </div>
+            <div class="experience-description">
+                <h2>Start coding ( 2021 - )</h2>
+                <p>I understand that there is a long journey in front of me - new chapters, new fields to discover, and I'm really glad to be on that road. I finally found something I'd like to commit myself to, completely.</p>
+            </div>
+        </div>
+        <hr>
+
+        </section>
+
+           <!-- SECTION SERVICES -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="title-heading">
+                <h2>Services</h2>
+                <!-- <p>Now, coding is my passion. I like to experiment, especially with CSS and animation</p> -->
+            </div>
+            <div class="service-tiers">
+                <div class="tier-item">
+                    <i class="fa fa-file-code" aria-hidden="true"></i>
+                    <h2>HTML</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut ultricies ipsum, in iaculis
+                        libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                        himenaeos. </p>
+                </div>
+                <div class="tier-item">
+                    <i class="fa fa-tablet" aria-hidden="true"></i>
+                    <h2>CSS/SASS</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut ultricies ipsum, in iaculis
+                        libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                        himenaeos. </p>
+                </div>
+                <div class="tier-item">
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <h2>JavaScript</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut ultricies ipsum, in iaculis
+                        libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                        himenaeos. </p>
+                </div>
+            </div>
+        </div>
+    
+        <hr>
+    </section>
+
+     <!-- SECTION PROJECTS -->
+     <section id="projects" class="projects">
+        <div class="title-heading">
+            <h2>Projects</h2>
+            <!-- <p>I believe that only a combination of professional code and modern design can give stunning effects. </p> -->
+        </div>
+
+
+        <div class="project-item">
+            <div class="project-img" >
+                <img src="img/PORTFOLIO.svg" />
+            </div>
+            <div class="project-description">
+                <h2>PORTFOLIO</h2>
+                <p>This project was built with HTML/SCSS and for compiling SCSS to CSS I was using Gulp (for the first time). I created the effect of moving stars by using of CSS Animation. I have also used Java Script for the music player, dark/light mode and more. </p>
+                <a href="#" class="project-link" target="_blank"></i>View more</a>
+            </div>
+            
+        </div>
+        <br>
+
+        <div class="project-item">
+            <div class="project-description">
+                <h2>Tea House</h2>
+                <p>This is one of the first projects I have ever built. It's created by using of HTML/SCSS and a little bit of Java Script (Swiper). The images on this site are not mine, they were taken from englishteastore.com - that site is my great inspiration for the upcoming projects. My favourite part on this project is the “pie menu“ in colours of the Irish flag.</p>
+                <a href="#" class="project-link" target="_blank"></i>View more</a>
+            </div>
+            <div class="project-img" id="has-margin-left">
+                <img src="img/cookie.svg" />
+            </div>
+        </div>
+        <br>
+
+        <div class="project-item">
+            <div class="project-img">
+                <img src="img/fun (5).svg" />
+            </div>
+            <div class="project-description" id="has-margin-left">
+                <h2>Newspaper Page</h2>
+                <p>Page is about my favorite animation movie from Ireland. I use "newspapers" style to present a story of the movie. It's look preety nice and pleasant. Worth a look.</p>
+                <a href="#" class="project-link" target="_blank"></i>View more</a>
+            </div>
+        </div>
+        <br>
+
+        <div class="project-item">
+            <div class="project-description">
+                <h2>Travel Blog</h2>
+                <p>This project is static page without any functionality. It's created using HTML/SCSS. It looks very nice and it's about Scotland Higlights.</p>
+                <a href="#" class="project-link" target="_blank"></i>View more</a>
+            </div>
+            <div class="project-img" id="has-margin-left">
+                <img src="img/fun (14).svg" />
+            </div>
+        </div>
+        <br>
+
+        <div class="project-item">
+            <div class="project-img">
+                <img src="img/simpleblog.svg" />
+            </div>
+            <div class="project-description" id="has-margin-left">
+                <h2>Music Blog</h2>
+                <p>In this project, I convert a site using hard-coded colors to use CSS variables, let the site automatically respond to the user's system theme, and then manually choose betwen a few colors.</p>
+                <a href="#" class="project-link" target="_blank"></i>View more</a>
+            </div>
+        </div>
+        <br>
+
+        <div class="project-item">
+            <div class="project-description">
+                <h2>Pet Care</h2>
+                <p>I will build a responsive website using HTML/CSS and look at things like positioning, flexbox, CSS Grid basics, and media queries.</p>
+                <a href="#" class="project-link" target="_blank"></i>View more</a>
+            </div>
+            <div class="project-img" id="has-margin-left">
+                <img src="img/pets.svg" />
+            </div>
+        </div>
+       
+        <hr>
+
+    </section>
+
+    <section id="contact" class="contact">
+
+        <div class="title-heading">
+            <h2>Contact</h2>
+        </div>
+
+        <div class="content">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <!-- Front Content -->
+                <div class="card__cont">
+                  <span class="lavander">alert</span>
+                  <span>(<span class="blue">'Ask me anything!'</span>)</span>
+                </div>
+              </div>
+              <div class="card__side card__side--back">
+                <!-- Back Content -->
+                <div class="card__cta">
+                  <p><span class="thistle">const</span> myInfo <span class="cyan">=</span> {
+                    <br />
+                    <span class="space purple">github</span>
+                    <span class="cyan">:</span> <span class="blue">'Justina93'</span>,
+                    <br/>
+                    <span class="space purple">email</span>
+                    <span class="cyan">:</span> <span class="blue">'justina.arsic@gmail.com'</span>,
+                    <br/>
+                    <span class="space purple">website</span><span class="cyan">:</span> <span class="blue">'justinadev.com'</span>
+                    <br/> 
+                    <span class="space purple">code editor</span><span class="cyan">:</span> <span class="blue">'Visual Studio Code'</span>,
+                    <br>
+                    <span class="space purple">my theme</span>
+                    <span class="cyan">:</span>
+                    <span class="blue">'Ariake Dark'</span>,
+                    <br/>
+                    };
+                  </p>
+                </div>
+              </div>
+            </div>
+    </section>
+
+    <footer>
+  
+        <div class="footer-nav">
+            <a href="#landing-page"" class="footer-nav-link">Home</a>
+            <a href="#about" class="footer-nav-link">About</a>
+            <a href="#experience" class="footer-nav-link">Experience</a>
+            <a href="#services" class="footer-nav-link">Services</a>
+            <a href="#projects" class="footer-nav-link">Projects</a>
+           
+            <div class="footer-coded-by">
+                <p><i class="fas fa-code"> with &#x2764; by Justina &copy;2022</i></p>
+            </div>
+        </div>
+
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>

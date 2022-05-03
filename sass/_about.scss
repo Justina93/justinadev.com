@@ -1,0 +1,131 @@
+.about {
+    margin: auto;
+  
+    min-height: 100vh;
+    max-width: 70rem;
+  
+    .container {
+      display: flex;
+      align-items: center;
+      min-height: 80vh;
+  
+      .about-img img {
+        height: 24rem;
+        width: auto;
+        margin: 2rem;
+        border: 6px solid $deep_ruby;
+        border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+        filter: grayscale(60%);
+        transition: filter 0.4s ease-in-out;
+      }
+  
+      .about-img:hover img {
+        filter: none;
+      }
+  
+      .about-text-box {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+  
+        blockquote {
+          font-size: 1.6rem;
+          letter-spacing: 1px;
+
+          height: 220px;
+          margin: 50px auto;
+          font-family: "Crafty Girls", cursive;
+          padding: 7rem 30px 1.2rem 35px;
+          border-left: 6px solid $deep_ruby;
+          line-height: 1.4;
+          position: relative;
+  
+          &:before {
+            content: "\201C";
+            color: $deep_ruby;
+            font-size: 10rem;
+            position: absolute;
+            left: 5px;
+            top: 4rem;
+            font-family: "Montez", cursive;
+          }
+  
+          span {
+            display: block;
+            color: $deep_ruby;
+            font-style: italic;
+            margin-top: 1rem;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+  
+  
+  //MEDIA QUERIES
+  @media only all and (max-width: 650px) {
+    .about {
+        margin: auto;
+        min-height: 100vh;
+        
+        .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          min-height: 80vh;
+      
+          .about-img img {
+            height: 30rem;
+     
+            margin: 2rem;
+            border: 6px solid $deep_ruby;
+            border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+            filter: grayscale(60%);
+            transition: filter 0.4s ease-in-out;
+          }
+      
+          .about-img:hover img {
+            filter: none;
+          }
+      
+          .about-text-box {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0;
+      
+            blockquote {
+              font-size: 1.9rem;
+              letter-spacing: 1px;
+              height: 270px;
+              margin: 50px auto;
+              font-family: "Crafty Girls", cursive;
+              padding: 7rem 30px 1.2rem 35px;
+              border-left: 6px solid $deep_ruby;
+              line-height: 1.4;
+              position: relative;
+      
+              &:before {
+                content: "\201C";
+                color: $deep_ruby;
+                font-size: 10rem;
+                position: absolute;
+                left: 5px;
+                top: 4rem;
+                font-family: "Montez", cursive;
+              }
+      
+              span {
+                display: block;
+                color: $deep_ruby;
+                font-style: italic;
+                margin-top: 1rem;
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+      
+  }
+  

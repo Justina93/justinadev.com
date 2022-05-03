@@ -1,0 +1,158 @@
+.projects {
+    padding: 3rem 0;
+    min-height: 100vh;
+    max-width: 70rem;
+    margin: auto;
+  
+    .title-heading {
+      text-align: center;
+      margin-bottom: 5rem;
+      margin-top: -6rem;
+  
+      h2 {
+        font-size: 3.8rem;
+        letter-spacing: 2.5px;
+        margin: 0.5rem 0 1rem 0;
+        font-family: $cursive_font;
+      }
+  
+      p {
+        font-size: 1.1rem;
+        margin-bottom: 5rem;
+        font-weight: 500;
+      }
+    }
+  
+    .project-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 1.45rem 5rem 1.45rem;
+  
+      #has-margin-left {
+        margin: 0 0 0 15rem;
+      }
+  
+      .project-img {
+        flex: 1;
+  
+        img {
+          width: 20rem;
+        }
+      }
+  
+      .project-description {
+        flex: 1;
+  
+        h2 {
+          font-size: 2rem;
+          font-family: $cursive_font;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin: 2rem 0;
+          background: $lavander_gradient;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+  
+        p {
+          font-size: 1.1rem;
+  
+          span {
+            font-style: italic;
+          }
+        }
+  
+        .project-link {
+          display: inline-block;
+          margin: 0.5rem 0;
+          font-size: 1.1rem;
+          font-weight: 400;
+          color: #8a77f3;
+        }
+      }
+    }
+  }
+  
+  //MEDIA QUERIES
+  @media only all and (max-width: 400px) {
+    .projects {
+        padding: 3rem 0;
+        min-height: 100vh;
+        max-width: 70rem;
+        margin: auto;
+      
+        .title-heading {
+          text-align: center;
+          margin-bottom: 5rem;
+          margin-top: -6rem;
+      
+          h2 {
+            font-size: 3.1rem;
+            letter-spacing: 2.5px;
+            margin: 0.5rem 0 1rem 0;
+            font-family: $cursive_font;
+          }
+      
+          p {
+            font-size: 1.1rem;
+            margin-bottom: 5rem;
+            font-weight: 500;
+          }
+        }
+      
+        .project-item {
+          padding: 0.7rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 1.45rem 5rem 1.45rem;
+      
+          #has-margin-left {
+            margin:1rem;
+          }
+      
+          .project-img {
+            flex: 1;
+      
+            img {
+              width: 16rem;
+            }
+          }
+      
+          .project-description {
+            flex: 1;
+      
+            h2 {
+              font-size: 2rem;
+              font-family: $cursive_font;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              margin: 2rem 0;
+              background: $lavander_gradient;
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+      
+            p {
+              font-size: 1.1rem;
+      
+              span {
+                font-style: italic;
+              }
+            }
+      
+            .project-link {
+              display: inline-block;
+              margin: 0.5rem 0;
+              font-size: 1.1rem;
+              font-weight: 400;
+              color: #8a77f3;
+            }
+          }
+        }
+      }
+  }
+  

@@ -1,0 +1,113 @@
+.landing-page {
+    width: 100%;
+    height: 100vh;
+    background: $moonlight_asteroid_gradient,
+      url("/img/landing\ \(1\).svg") center no-repeat;
+    background-size: contain;
+    position: relative;
+  
+    .main-message {
+      width: 100%;
+      max-width: 58rem;
+      text-transform: uppercase;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+  
+      h2 {
+        color: $global_color;
+        padding: 1.5rem;
+        letter-spacing: 5px;
+        font-weight: 100;
+        font-size: 1.7rem;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 5s steps(26), blink 1s ease-in-out 5s infinite;
+        width: 27ch;
+        margin: auto;
+      }
+  
+      @keyframes typing {
+        75% {
+          width: 0ch;
+          color: rgba(0, 48, 83, 1);
+        }
+        100% {
+          width: 27ch;
+        }
+      }
+  
+      h3 {
+        padding: 1rem;
+        font-family: $cursive_font;
+        font-size: 2.9rem;
+        letter-spacing: 2px;
+        color: $global_color;
+        background: $cosmic_gradient;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+  
+      }
+  
+      p {
+        text-transform: none;
+        font-size: 1.7rem;
+        font-weight: 100;
+        padding: 1.5rem;
+        color: $global_color;
+        margin-right: 25px;
+      }
+  
+      .intro-btn {
+        display: flex;
+        justify-content: center;
+  
+        .btn {
+          margin-left: 5px;
+          margin-right: 10px;
+          margin-top: 2rem;
+          background-color: $deep_ruby;
+          border-radius: 2rem;
+          padding: 1rem 1.5rem;
+          display: inline-block;
+          transition: background-color 0.3s;
+          font-weight: 400;
+          letter-spacing: 1px;
+        }
+  
+        .btn:hover {
+          background: rgb(47, 50, 77);
+        }
+      }
+  
+      .scroll-down i {
+        color: rgba(44, 47, 68, 0.8);
+        transition: color 650ms;
+        margin-top: 2.5rem;
+        font-size: 2.5rem;
+        padding: 0.2rem;
+        margin-left: 5px;
+  
+        &:hover {
+          color: #2e3f50;
+        }
+      }
+  
+      #pink-floyd {
+        font-size: 13px;
+        letter-spacing: 1px;
+        // font-family: 'Crafty Girls', cursive;
+        font-family: $cursive_font;
+        color: #2e3f50;
+        margin-left: 25px;
+        margin-top: 2rem;
+      }
+    }
+  }
+  
+  //MEDIA QUERIES
+  
+  

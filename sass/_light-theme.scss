@@ -1,0 +1,46 @@
+.switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgba(19, 19, 19, 0.7);
+    position: relative;
+  
+    .sun {
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      transition: 0.3s;
+      box-shadow: inset 5px 5px 5px rgb(255, 255, 255),
+        inset -5px -5px 5px rgb(195, 193, 198);
+    }
+  
+    .moon {
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      box-shadow: 5px 5px 0 0 rgb(255, 255, 255);
+      top: 5px;
+      margin-left: 40px;
+    }
+  }
+  
+  .light .sun {
+    transform: translateX(40px);
+  }
+  
+  //ALL CODE
+  .light {
+    background: rgb(182, 188, 194);
+    color: #563c5c;
+    font-weight: 300;
+    transition: 0.9s;
+  
+    #stars, #stars2, #stars3 {
+      display: none;
+    }
+  }
+  

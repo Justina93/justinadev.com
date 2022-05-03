@@ -1,0 +1,140 @@
+.contact {
+  
+    .title-heading {
+      text-align: center;
+      margin-bottom: -2rem;
+  
+      h2 {
+        font-size: 3.8rem;
+        letter-spacing: 2.5px;
+        margin: 0.5rem 0 1rem 0;
+        font-family: $cursive_font;
+      }
+    }
+  
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
+    "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+    "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
+    monospace;
+    font-size: 14px;
+  }
+  
+  $lavander: #666699;
+  $blue: #536895;
+  $thistle: #a2a2d0;
+  $purple: #666699;
+  $cyan: #666699;
+  
+  @mixin text-color($color) {
+    color: $color;
+  }
+  
+  .lavander {
+    @include text-color($lavander);
+  }
+  
+  .blue {
+    @include text-color($blue);
+  }
+  
+  .thistle {
+    @include text-color($thistle);
+  }
+  
+  .cyan {
+    @include text-color($cyan);
+  }
+  
+  .purple {
+    @include text-color($purple);
+  }
+  
+  .content {
+    // height: 100vh;
+    height: 440px;
+    @include text-color(#7b68ee);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .card {
+    //FUNCTIONALITY
+    perspective: 150rem;
+    height: 20rem;
+    width: 30rem;
+    position: relative;
+  
+    &__side {
+      height: 15rem;
+      transition: all 0.8s ease;
+  
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: auto;
+      width: 30rem;
+      backface-visibility: hidden;
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 0 1.5rem 4rem rgba(black, 0.4);
+  
+      &--front {
+        background-color: rgba(32, 34, 53, 1);
+      }
+  
+      &--back {
+        transform: rotateY(180deg);
+  
+        background-color: rgba(32, 34, 53, 1);
+      }
+    }
+  
+    &:hover &__side--front {
+      transform: rotateY(-180deg);
+    }
+  
+    &:hover &__side--back {
+      transform: rotateY(0deg);
+    }
+  
+    //FRONT SIDE STYLING
+    &__cont {
+      height: 15rem;
+      background-color: rgba(32, 34, 53, 1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    &__cta {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      @include text-color(#7b68ee);
+  
+      p {
+        margin-left: 1rem;
+  
+        & > .space {
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+  
+  //MEDIA QUERIES
+  @media only all and (max-width: 400px) {
+    .contact {
+  
+      .title-heading {
+    
+        h2 {
+          font-size: 3.1rem;
+        }
+      }
+  }
+}

@@ -1,0 +1,111 @@
+.services {
+    padding: 3rem 0;
+    min-height: 100vh;
+    max-width: 70rem;
+    margin: auto;
+  
+    .title-heading {
+      text-align: center;
+      margin-bottom: 8rem;
+      margin-top: -3rem;
+  
+      h2 {
+        font-size: 3.8rem;
+        letter-spacing: 2.5px;
+        margin: 0.5rem 0 1rem 0;
+        font-family: $cursive_font;
+      }
+  
+      p {
+        font-size: 1.1rem;
+        margin-bottom: 5rem;
+        font-weight: 500;
+      }
+    }
+  
+    .service-tiers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      gap: 2.5rem;
+  
+      &:hover .tier-item {
+        filter: blur(1px);
+        opacity: 0.5;
+        transform: scale(0.88);
+        box-shadow: none;
+  
+        &:hover {
+          transform: scale(1);
+          filter: blur(0px);
+          opacity: 1;
+          box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+        }
+      }
+      .tier-item {
+        height: 20rem;
+        padding: 1rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: default;
+        transition: 0.2s all;
+  
+        i {
+          font-size: 3.1rem;
+          text-align: center;
+        }
+  
+        h2 {
+          font-size: 1.8rem;
+          font-family: $cursive_font;
+          letter-spacing: 1px;
+          margin: 1.5rem 0;
+          text-align: center;
+          background: $crimson_gradient;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+  
+        p {
+          font-size: 1rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+  
+  //MEDIA QUERIES
+  @media only all and (max-width:400px) {
+    .services {
+      
+      
+        .title-heading {
+         
+      
+          h2 {
+            font-size: 3.1rem;
+          }
+        }
+      
+        .service-tiers {
+     
+          .tier-item {
+        
+            i {
+              font-size: 2.4rem;
+              text-align: center;
+            }
+      
+            h2 {
+              font-size: 2.4rem;
+            }
+      
+            p {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+  }

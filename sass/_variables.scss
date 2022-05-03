@@ -1,0 +1,65 @@
+$global_font:'Roboto Mono', monospace;
+
+$cursive_font: 'Original Surfer', cursive;
+
+$global_color: #aa98a9;
+
+$deep-ruby: rgb(93, 57, 84);
+
+//GRADIENTS
+
+$cosmic_gradient: linear-gradient(
+    to right,
+    rgb(93, 57, 84) 20%,
+    rgb(0, 49, 84) 80%
+  );
+
+$galaxy_gradient: linear-gradient(
+    to right,
+    rgb(83, 104, 149) 0%,
+    rgb(66, 68, 102) 100%
+);
+
+$candy_gradient: linear-gradient(
+    135deg,
+    rgb(18, 97, 128) 0%,
+    rgb(255, 179, 222) 100%
+);
+
+$crimson_gradient: linear-gradient(
+    to right,
+    rgb(127,23,52) 0%,
+    rgb(0,49,83) 100%
+);
+
+$lavander_gradient: linear-gradient(
+    to right,
+    rgb(90, 69, 102) 0%,
+    rgb(0, 49, 83) 100%
+);
+
+$comet_gradient: linear-gradient(
+    to right,
+    rgb(93, 102, 114) 0%,
+    rgb(0, 49, 83) 100%
+);
+
+$moonlight_asteroid_gradient: linear-gradient(
+    135deg,
+    rgba(0, 48, 83, 0.6) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+);
+
+//BACKGROUNDS
+$midnight1:rgba(32, 34, 53, 1);
+$midnight09:rgba(32, 34, 53, 0.9);
+$midnight08:rgba(32, 34, 53, 0.8);
+$midnight07:rgba(32, 34, 53, 0.7);
+$midnight06:rgba(32, 34, 53, 0.6);
+
+//CONTACT COLORS
+$dark_color03:rgba(0, 0, 0, 0.3);
+$dark_color04:rgba(0, 0, 0, 0.4);
+$dark_color05:rgba(0, 0, 0, 0.5);
+
+

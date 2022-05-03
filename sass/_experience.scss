@@ -1,0 +1,136 @@
+.experience {
+    padding: 3rem 0;
+    min-height: 100vh;
+    max-width: 70rem;
+    margin: auto;
+  
+    .title-heading {
+      text-align: center;
+      margin-bottom: 7rem;
+  
+      h2 {
+        font-size: 3.8rem;
+        letter-spacing: 2.5px;
+        margin: 0.5rem 0 1rem 0;
+        font-family: $cursive_font;
+      }
+  
+      p {
+        font-size: 1.1rem;
+        margin-bottom: 5rem;
+        font-weight: 500;
+      }
+    }
+  
+    .experience-item {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 3rem;
+      align-items: center;
+      justify-content: center;
+  
+      .has-margin {
+        margin: 0 0 0 10rem;
+      }
+  
+      .experience-img img {
+        width: 24rem;
+        border: 5px solid #1e2d3d;
+        border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+        filter: grayscale(70%);
+        transition: filter 0.4s ease-in-out;
+  
+        &:hover {
+          filter: none;
+        }
+      }
+    }
+  
+    .experience-description {
+      h2 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family: $cursive_font;
+        margin: 2rem 0;
+        background: $comet_gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+  
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  
+  //MEDIA QUERIES
+  @media only all and (max-width: 400px) {
+    .experience {
+        padding: 3rem 0;
+        min-height: 100vh;
+        max-width: 70rem;
+        margin: auto;
+      
+        .title-heading {
+          text-align: center;
+          margin-bottom: 7rem;
+      
+          h2 {
+            font-size: 3.1rem;
+            letter-spacing: 2.5px;
+            margin: 0.5rem 0 1rem 0;
+            font-family: $cursive_font;
+          }
+      
+          p {
+            font-size: 1.1rem;
+            margin-bottom: 5rem;
+            font-weight: 500;
+          }
+        }
+      
+        .experience-item {
+          padding: 1rem;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 3rem;
+          align-items: center;
+          justify-content: center;
+      
+          .experience-img img {
+            width: 14rem;
+            border: 5px solid #1e2d3d;
+            border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+            filter: grayscale(70%);
+            transition: filter 0.4s ease-in-out;
+      
+            &:hover {
+              filter: none;
+            }
+          }
+        }
+      
+        .experience-description {
+          h2 {
+            font-size: 1.7rem;
+            letter-spacing: 1px;
+            text-transform: none;
+            font-family: $cursive_font;
+            margin: 2rem 0;
+            background: $comet_gradient;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+      
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      
+  }
+  
+  
